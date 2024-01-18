@@ -1,0 +1,362 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family: 'Cardo', sans-serif;
+    }
+
+nav {
+    position: fixed; /* Fixed position to keep it visible while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 80px;
+    background: #2a2263;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #fff;
+    background: #5e1a41;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        padding: 0 40px 0 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+
+    #click:checked ~ .menu-btn i:before {
+        content: "\f00d";
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked ~ ul {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    #click:checked ~ ul li a {
+        margin-left: 0px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+.content div {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+body {
+    background-image: url(skye.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.text-section {
+    width: 50%;
+    text-align: left
+    padding-left 100px;
+}
+
+.text-section h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    color: #fff;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.images {
+    width: 50%;
+    text-align: right;
+    padding-right: 150px;
+}
+
+.rounded-image {
+    width: 75%;
+    height: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+.info div {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.info-body {
+    width: 100%;
+    text-align: left
+    padding-left 100px;
+}
+
+.info-body h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.info-body p {
+    color: #fff;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.portrait {
+    width: 50%;
+    text-align: right;
+    padding-right: 75px;
+}
+
+.box-image {
+    width: 75%;
+    height: 50%;
+    border-radius: 15px;
+    overflow: hidden; 
+    border: 10px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-body button {
+    font-size: 20px;
+    font-style: italic;
+    background-color: #9b2769;
+    color: #fff;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#popupText {
+    display: none;
+    padding: 15px;
+    background-color: #ffffffbc;
+    color: #333;
+    border-radius: 50px;
+    margin-top: 5px;
+    max-width: 95%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skill {
+    margin-top:100px;
+    height:flex;
+    width:100%;
+    margin: flex; 
+    align-content: center;
+    padding: 50px;
+    border: 5px solid #2a2263; 
+    border-radius: 10px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 500px;
+}
+
+.experience_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details_container {
+    width: auto; 
+    height: auto;
+    padding: 12px;
+    border: 2px solid #2a2263; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.details_container:hover {
+    transform: scale(1.05);
+}
+
+.article-container img{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.detail {
+    margin-top:1000px;
+    float: center;
+    margin-bottom:500px
+}
+
+.contact-left {
+    float: left;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+.contact-left h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.contact-left p {
+    font-size: 30px;
+}
+
+.socmed-icons{
+    margin-top: 30px;
+}
+
+.socmed-icons a {
+    text-decoration: none;
+    font-size: 50px;
+    padding-block: 5px;
+    color: #333;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.socmed-icons a:hover {
+    color:#2a2263;
+    transform: translateY(-5px);
+}
+
+.resume {
+    float: right;
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 100px;
+}
+
+.resume p {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #2a2263;
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+ }
+ 
+ .download-button:hover {
+    background-color: #1a1542;
+ }

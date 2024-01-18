@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+   <head>
+      <meta charset="utf-8">
+      <title>User Profile</title>
+      <link rel="stylesheet" href="mariano_CSS.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script defer src="mariano_JS.js"></script>
+   </head>
+   
+   <body>
+      <nav>
+         <div class="logo">
+            <i>My User Profile</i>
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a class="home" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">My Contact</a></li>
+         </ul>
+      </nav>
+
+      <!-- home-->
+      <div id="home" class="content">
+        <div class="text-section">
+            <h1>Hello there, I'm Elijah! <br> Welcome to my Web Profile!</h1><br>
+            <p>Allow me to introduce myself to you.</p>
+               I am still a novice I.T. student, so bear with me.
+        </div>
+        <div class="images">
+          <img src="mariano.jpg" alt="mariano pic" class="rounded-image">
+        </div>
+     </div> 
+
+      <!-- about me-->
+      <div id="about" class="info">
+         <div class="portrait">
+            <img src="selfie.jpg" alt="mariano pic" class="box-image">
+         </div>
+         <div class="info-body">
+            <h1>Get to know me!</h1>
+            <p>Interact with the button to see.</p>
+            <button id="popupButton">Show More</button>
+            <div id="popupText" class="hidden">
+               Name: Elijah Jesse M. Mariano <br>
+               Age: 20 years old <br>
+               Horoscope: Sheep <br>
+               Zodiac Sign: Capricorn <br>
+               Hobbies: Watching Animes, reading light novels, <br>
+               experimenting with food recipes, playing video games, and <br>
+               making youtube content (if there's free time T_T) <br>
+               Preferred music genre: Jazz, RnB, pop (j-pop, & k-pop), and OPM.
+               </div>
+         </div>
+      </div>
+
+
+      <!--Skills/Hobbies-->
+      <div id="skill">
+         <p class="section_text_p1">My Recent Endeavors</p>
+         <h1 class="title">My Gallery</h1>
+         <div class="experience_container">
+            <div class="details_container color_container">
+               <div class="article-container">
+                  <img
+                     src="model1.jpg"
+                     alt="Model 1"
+                     class="project-img"
+                  />
+               </div>
+               <h2 class="experience_subtitle project title">Exhibit One</h2>
+            </div>
+            <div class="details_container color_container">
+               <div class="article-container">
+                  <img
+                     src="model2.jpg"
+                     alt="Model 2"
+                     class="project-img"
+                  />
+               </div>
+               <h2 class="experience_subtitle project title">Exhibit Two</h2>
+            </div>
+            <div class="details_container color_container">
+               <div class="article-container">
+                  <img
+                     src="model3.jpg"
+                     alt="Model 3"
+                     class="project-img"
+                  />
+               </div>
+               <h2 class="experience_subtitle project title">Exhibit Three</h2>
+            </div>
+
+         </div>
+      </div>
+
+       <!-- contact/resume-->
+      <div id="contact" class="detail">
+         <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1><br>
+            <p><i class='bx bxl-gmail' ></i> elijahjessemariano@gmail</p><br>
+            <p><i class='bx bxs-phone-call' ></i> (+63) 9762531573</p>
+            <div class="socmed-icons">
+               <a href="https://www.facebook.com/blakefiled.ejjesse"><i class='bx bxl-facebook-circle' ></i></a>
+               <a href="https://www.instagram.com/elijah_mariano03/"><i class='bx bxl-instagram' ></i></a>
+               <a href="https://www.youtube.com/channel/UC76m61_EuaqKjGF_2CfJ0ow"><i class='bx bxl-youtube' ></i></a>
+               <a href="https://www.tiktok.com/@elliewashere03"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+        </div>
+        <div class="resume">
+            <h1>To further know me in detail,</h1>
+            <p>feel free to download my Résumé</p>
+            <a href="https://drive.google.com/drive/u/1/folders/1kCrKYsCJMbDQWsxfTJoAySQV1uXJl2tv"
+             download="Mariano_Resume.pdf" class="download-button"><i class='bx bxs-download'></i> DOWNLOAD Résumé</a>   
+        </div>
+      </div>
+   </body>
+</html>
